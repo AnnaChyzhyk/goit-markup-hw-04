@@ -188,8 +188,6 @@ address {
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   ), url(../images/Img\ \(1\).jpg);
-  
-
 }
 
 .section{
@@ -402,12 +400,19 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--icon-color);
 }
 
 .comand-svg{
   width: 20px;
   height: 20px;
-  fill: var(--icon-color);
+  fill: currentColor;
+}
+
+.comad-href:hover,
+.comad-href:focus{
+  color: var(--header-text-color);
+  background-color: var(--acent-text-color);
 }
 /* портфолио */
 
@@ -592,10 +597,12 @@ address li:not(:last-child){
   letter-spacing: 0.02em;
   opacity: 0.6;
 }
+
 .footer-box{
 display: flex;
 flex-direction: column;
 }
+
 .footer-text{
   font-weight: bold;
 font-size: 14px;
@@ -604,7 +611,9 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--background-bootun);
 margin-bottom: 20px;
+padding-top: 10px;
 }
+
 .foter-list{
   display: flex;
   justify-content: center;
